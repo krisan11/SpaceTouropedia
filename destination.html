@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./starter-code/assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="technology.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="destination.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <style>
+        @media(min-width:768px) {
+
+            #c1,
+            #c3,
+            #c4 {
+                visibility: hidden;
+            }
+
+            #c2 {
+                visibility: visible;
+            }
+        }
+    </style>
+    <title>Space-tourism:Destination-page</title>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <nav class="navbar navbar-expand-md bg-body-outline">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="./starter-code/assets/shared/logo.svg" alt="LOGO">
+                </a>
+                <hr class="top-line">
+                <button class="btn btn-outline d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><img
+                        src="./starter-code/assets/shared/icon-hamburger.svg"></button>
+                <div class="offcanvas-md offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="close-btn" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"><img
+                                src="./starter-code/assets/shared/icon-close.svg" alt=""></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link home text-light" id="01" href="./index.html"><span
+                                        class="number">00</span>
+                                    HOME</a>
+                                <hr class="line l1" id="c1">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" id="02" href="./destination.html"><span
+                                        class="number">01</span>
+                                    DESTINATION</a>
+                                <hr class="line" id="c2">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link crew text-light" id="03" href="./crew.html"><span
+                                        class="number">02</span>
+                                    CREW</a>
+                                <hr class="line" id="c3">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link technology text-light" id="04" href="./technology.html"><span
+                                        class="number">03</span>
+                                    TECHNOLOGY</a>
+                                <hr class="line" id="c4">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid section-tech">
+            <div class="row">
+                <div class="header col-md-12">
+                    <h5><span style="opacity: 0.5; padding-right: 5px; font-weight: 900;">01</span> PICK YOUR
+                        DESTINATION</h5>
+                </div>
+                <div class="col-md-12 col-lg-5 image-tech">
+                    <img class="tech-image" src="./starter-code/assets/destination/image-moon.png">
+                </div>
+                <div class="col-md-12 col-lg-6 tech-text">
+                    <div class="dots">
+                        <div class="planet" id="Moon">
+                            <a id="moon" href="./destination.html">MOON</a>
+                            <hr id="m1">
+                        </div>
+                        <div class="planet" id="Mars">
+                            <a id="mars" class="disable" href="./destination2.html">MARS</a>
+                            <hr id="m2">
+                        </div>
+                        <div class="planet" id="Europa">
+                            <a id="europa" class="disable" href="./destination3.html">EUROPA</a>
+                            <hr id="m3">
+                        </div>
+                        <div class="planet" id="Titan">
+                            <a id="titan" class="disable" href="./destination4.html">TITAN</a>
+                            <hr id="m4">
+                        </div>
+                    </div>
+                    <div class="text-part">
+                        <h1>MOON</h1>
+                        <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+                            regain perspective and come back refreshed. While you’re there, take in some history
+                            by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                    </div>
+                    <hr class="middle-line">
+                    <div class="footer">
+                        <div class="length">
+                            <h2>AVG. DISTANCE</h2>
+                            <h1>384,400 KM</h1>
+                        </div>
+                        <div class="time">
+                            <h2>EST. TRAVEL TIME</h2>
+                            <h1>3 DAYS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./technology.js"></script>
+</body>
+
+</html>

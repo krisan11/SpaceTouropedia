@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./starter-code/assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="technology.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="destination.css">
+    <link rel="stylesheet" href="crew.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>Space-tourism:crew-page</title>
+    <style>
+        #hurley,
+        #victor,
+        #ansari {
+            opacity: 0.2;
+        }
+
+        #mark {
+            opacity: 1;
+        }
+
+        @media(min-width:768px) {
+            .slider {
+                margin-top: 2rem;
+            }
+
+            #c1,
+            #c2,
+            #c4 {
+                visibility: hidden;
+            }
+
+            #c3 {
+                visibility: visible;
+            }
+        }
+
+        @media(min-width:992px) {
+            .slider {
+                margin-top: 0;
+            }
+
+            @media(min-width:1200px) {
+                .text-part h3 {
+                    font-size: 45px;
+                    width: max-content;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <nav class="navbar navbar-expand-md bg-body-outline">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./starter-code/assets/shared/logo.svg" alt="LOGO">
+                </a>
+                <hr class="top-line">
+                <button class="btn btn-outline d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><img
+                        src="./starter-code/assets/shared/icon-hamburger.svg"></button>
+                <div class="offcanvas-md offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="close-btn" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"><img
+                                src="./starter-code/assets/shared/icon-close.svg" alt=""></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link home text-light" id="01" href="./index.html"><span
+                                        class="number">00</span>
+                                    HOME</a>
+                                <hr class="line l1" id="c1">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link destination text-light" id="02" href="./destination.html"><span
+                                        class="number">01</span>
+                                    DESTINATION</a>
+                                <hr class="line" id="c2">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" id="03" href="./crew.html"><span class="number">02</span>
+                                    CREW</a>
+                                <hr class="line" id="c3">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link technology text-light" id="04" href="./technology.html"><span
+                                        class="number">03</span>
+                                    TECHNOLOGY</a>
+                                <hr class="line" id="c4">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid section-tech">
+            <div class="row crew-content">
+                <div class="col-lg-12 col-lg-1 header">
+                    <h5><span style="opacity: 0.5; padding-right: 5px; font-weight: 900;">02</span> MEET YOUR CREW</h5>
+                </div>
+                <div class="col-lg-6 crew-part">
+                    <div class="text-part">
+                        <h5><span style="opacity: 0.5; padding-right: 5px; font-weight: 900;">02</span> MEET YOUR CREW
+                        </h5>
+                        <h4>Mission Specialist</h4>
+                        <h3>Mark Shuttleworth</h3>
+                        <p> Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
+                            the Linux-based Ubuntu operating system. Shuttleworth became the first South
+                            African to travel to space as a space tourist.</p>
+                    </div>
+                    <div class="slider">
+                        <a id="hurley" class="c-disable" href="./crew.html"></a>
+                        <a id="mark" href="./crew1.html"></a>
+                        <a id="victor" class="c-disable" href="./crew2.html"></a>
+                        <a id="ansari" class="c-disable" href="./crew3.html"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 crew-image">
+                    <img src="./starter-code/assets/crew/image-mark-shuttleworth.png" alt="">
+                    <hr class="crew-line">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./technology.js"></script>
+</body>
+
+</html>
